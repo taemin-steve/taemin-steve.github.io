@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!--모바일에서 크기 맞춰주기-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java script 예제</title>
+    <link rel="stylesheet" href="style1.css">
+    <style> 
+       @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+       @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap');
+       @import url('https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap');
+       @import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap');
+       @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+        @keyframes animation {
+            0%{color: black;}
+            25%{color: green;}
+            50%{color:red;}
+            75%{colot:#F2F2F2;}
+            100%{color: blue;}
+        }
+       a{
+           text-decoration: none;
+           color: black;
+       }
+       h1{
+           opacity: 0.3;
+       }
+        #top{
+            position: relative;
+            z-index: 2;
+            width: 100%;
+            box-sizing: border-box;
+            padding-top: 62px;
+            pointer-events: auto;
+        }
+
+
+        #grid_menu{
+            display: grid;
+            grid-template-columns: repeat(12,minmax(0,1fr));
+            grid-column-gap: 20px;
+            grid-row-gap: 20px;
+            grid-auto-rows: min-content;
+            width: 100%;
+            max-width: 1440px;
+            margin: auto;
+        }
+        #name{
+            grid-column: 2 / span 2;
+            margin-left: -20px;
+            z-index: 2;
+        }
+        #index{
+            grid-column-start: 5;
+            grid-column-end: auto;
+        }
+        #unv{
+            grid-column-start: 10;
+            grid-column-end: auto;
+        }
+        body{
+            background-color: #F2F2F2;
+            font-family: 'Karla', sans-serif;
+            font-weight:  300;
+        }
+
+
+        #grid_java{
+            display: grid;
+            grid-template-columns: repeat(12,minmax(0,1fr));
+            grid-column-gap: 20px;
+            grid-row-gap: 20px;
+            grid-auto-rows: min-content;
+            width: 100%;
+            max-width: 1440px;
+            margin: auto;
+            font-size: 1.2em;
+        }
+        #Hi{
+            grid-column: 4 / span 4;
+        }
+
+
+        #grid_intro{
+            padding-top: 8em;
+            display: grid;
+            grid-template-columns: repeat(12,minmax(0,1fr));
+            grid-column-gap: 20px;
+            grid-row-gap: 20px;
+            grid-auto-rows: min-content;
+            width: 100%;
+            max-width: 1440px;
+            margin: auto;
+        }
+        #intro{
+            grid-column-start: 4;
+            grid-column-end: auto;
+        }
+        #content{
+            grid-column: 6 / span 4;
+            font-size: 1.3em;
+        }
+
+
+        #grid_menu_name{
+            padding-top: 8em;
+            display: grid;
+            grid-template-columns: repeat(12,minmax(0,1fr));
+            grid-column-gap: 20px;
+            grid-row-gap: 20px;
+            grid-auto-rows: min-content;
+            width: 100%;
+            max-width: 1440px;
+            margin: auto;
+        }
+        #love{
+            grid-column: 2 / span 4;
+            margin-left: -20px;
+            font-family: 'Playfair Display', serif;
+            font-size: 2em;
+        }
+
+
+        #grid_menu_photo{
+            padding-top: 1em;
+            padding-bottom: 10em;
+            display: grid;
+            grid-template-columns: repeat(12,minmax(0,1fr));
+            grid-column-gap: 20px;
+            grid-row-gap: 20px;
+            grid-auto-rows: min-content;
+            width: 100%;
+            max-width: 1440px;
+            margin: auto;
+        }
+        #menu{
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8em;
+            font-weight: 200;
+            grid-column: 3 / span 8;
+        }
+        hr{
+            margin-top: 1.5em;
+            margin-bottom: 1.5em;
+        }
+
+        #basketball:hover{
+            transform: translateX(50px);
+            opacity: 1;
+            cursor: url(1.cur);
+        }
+        #perfume:hover{
+            transform: translateX(50px);
+            opacity: 1;
+        }
+        #animation:hover{
+            transform: translateX(50px);
+            opacity: 1;
+        }
+
+        #basketball_img{
+            display: none;
+            position: absolute;
+            z-index: 1000;
+        }
+        #perfume_img{
+            display: none;
+            position: absolute;
+            z-index: 1000;
+        }
+        #animation_img{
+            display: none;
+            position: absolute;
+            z-index: 1000;
+        }
+
+        .wil:hover{
+            text-transform: uppercase;
+            font-size: 1.5em;
+        }
+        #vs{
+            animation-name: animation;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        #vs:hover{
+            text-transform: uppercase;
+            font-size: 1.5em;
+        }
+        #homei:hover{
+            transform: translateX(10px);
+        }
+        #basketballi:hover{
+            transform: translateX(10px);
+        }
+        #perfumei:hover{
+            transform: translateX(10px);
+        }
+        #animationi:hover{
+            transform: translateX(10px);
+        }
+        
+    </style>
+</head>  
+<body>
+    <div id="top"></div>
+
+    <div id="grid_menu">
+        <div id="name"><a href="index.html">TAE MIN JEONG</a></div>
+        <div id="index"><div id="homei"><a href="index.html"> Home</a></div><div id="basketballi"><a href="basketball.html">Basketball</a></div><div id="perfumei"><a href="perfume.html">Perfume</a></div><div id="animationi"><a href="animation.html">Animation</a></div></div>
+        <div id="unv">Kwangwoonuvs</div>
+    </div>
+    <canvas id="my_canvas" style="height: 80%; width: 100;"></canvas>
+    <br><br><br><br><br><br>
+
+    
+    <div id="grid_java">
+         <div id="Hi"><div>Student Of <br>Kwangwoon University</div><div id="vs">Visual Content</div></div></div>
+    </div>
+
+
+    <div id="grid_intro">
+        <div id="intro">Intro</div>
+        <div id="content"> 
+           This page is about <span class="wil">what i love</span>  <br> I referred to CRAIG REYNOLDS's page </div>
+    </div>
+
+
+    <div id="grid_menu_name">
+        <div id="love"><h2>WHAT I LOVE</h2></div>
+    </div>
+
+    <div id="grid_menu_photo"><div id="menu">
+        <hr>
+        <h1 id="basketball" ><a href="basketball.html">BASKET BALL</a></h1> <div id="basketball_img"><img src="image/basketball.jpg" height="300" width="500" alt=""></div>
+        <hr>
+        <h1 id="perfume"><a href="perfume.html">PERFUME</a></h1> <div id="perfume_img"> <img src="image/perfume.jpg" height="300" width="400" alt=""></div>
+        <hr>
+        <h1 id="animation">ANIMATION</h1> <div id="animation_img"> <img src="image/animation.jpg" height="400" width="700" alt=""></div>
+        <hr>
+    </div></div>
+
+</body>
+<script type="module" src="app.js"></script>
+<script type="module" src="dialog.js"></script>
+<script type="module" src="point.js"></script>
+<script>
+    let basketball_img = document.getElementById('basketball_img');
+    let basketball = document.getElementById('basketball');
+
+    basketball.addEventListener("mouseover", this.overb.bind(this));
+    basketball.addEventListener("mouseleave", this.leaveb.bind(this));
+    function overb(e) {
+     basketball_img.style.display = 'block';
+    }
+    function leaveb() {
+        basketball_img.style.display = 'none';
+    }
+
+    let perfume_img = document.getElementById('perfume_img');
+    let perfume = document.getElementById('perfume');
+
+    perfume.addEventListener("mouseover", this.overp.bind(this));
+    perfume.addEventListener("mouseleave", this.leavep.bind(this));
+    function overp(e) {
+        perfume_img.style.display = 'block';
+    }
+    function leavep() {
+       perfume_img.style.display = 'none';
+    }
+
+    let animation_img = document.getElementById('animation_img');
+    let animation = document.getElementById('animation');
+
+    animation.addEventListener("mouseover", this.overa.bind(this));
+    animation.addEventListener("mouseleave", this.leavea.bind(this));
+    function overa(e) {
+        animation_img.style.display = 'block';
+    }
+    function leavea() {
+        animation_img.style.display = 'none';
+    }
+
+window.onload = () =>{
+    new App();
+}
+</script>
+</html>

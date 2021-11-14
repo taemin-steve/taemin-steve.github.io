@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+
+        a{
+           text-decoration: none;
+           color: white;
+        }
+
+        body{
+            background-color: #F2F2F2;
+            font-family: 'Karla', sans-serif;
+            font-weight:  300;
+            margin: 0;
+            height: 100vh;
+        }
+        #head{
+            width: 100%;
+            height: 100%;
+        }
+
+        #image{
+            position: absolute;
+            color: white;
+        }
+        #top{
+            position: relative;
+            z-index: 2;
+            width: 100%;
+            box-sizing: border-box;
+            padding-top: 62px;
+            pointer-events: auto;
+        }
+
+
+        #grid_menu{
+            display: grid;
+            grid-template-columns: repeat(12,minmax(0,1fr));
+            grid-column-gap: 20px;
+            grid-row-gap: 20px;
+            grid-auto-rows: min-content;
+            width: 100%;
+            max-width: 1440px;
+            margin: auto;
+            color: white;
+        }
+        #name{
+            grid-column: 2 / span 2;
+            margin-left: -20px;
+            z-index: 2;
+            color: white;
+        }
+        #index{
+            grid-column-start: 5;
+            grid-column-end: auto;
+        }
+        #unv{
+            grid-column-start: 10;
+            grid-column-end: auto;
+        }
+        #center{
+            text-align: center;
+            font-size: 5em;
+            font-family: 'Playfair Display', serif;
+        }
+
+        #intro{
+            padding-top: 3em;
+            padding-bottom: 3em;
+            display: grid;
+            grid-template-columns: repeat(12,minmax(0,1fr));
+            grid-column-gap: 20px;
+            grid-row-gap: 20px;
+            grid-auto-rows: min-content;
+            width: 100%;
+            max-width: 1440px;
+            margin: auto;
+        }
+        #intro1{
+            grid-column-start: 2;
+        }
+        #intro_content{
+            grid-column: 3 / span 5;
+            font-size: 1.1em;
+        }
+        #curry_image{
+            position: absolute;
+            right: 8em;
+            top: 115%;
+        }
+
+
+        #stephen{
+            padding-top: 3em;
+            padding-bottom: 3em;
+            display: grid;
+            grid-template-columns: repeat(12,minmax(0,1fr));
+            grid-column-gap: 20px;
+            grid-row-gap: 20px;
+            grid-auto-rows: min-content;
+            width: 100%;
+            max-width: 1440px;
+            margin: auto;
+        }
+        #curry{
+            grid-column-start: 4;
+        }
+        #curry1{
+            grid-column: 5 / span 4;
+            font-size: 1.1em;
+        }
+        #homei:hover{
+            transform: translateX(10px);
+        }
+        #basketballi:hover{
+            transform: translateX(10px);
+        }
+        #perfumei:hover{
+            transform: translateX(10px);
+        }
+        #animationi:hover{
+            transform: translateX(10px);
+        }
+    </style>
+</head>
+<body>
+    <div id="image">
+    <div id="top"></div>
+    <div id="grid_menu">
+        <div id="name"><a href="index.html">TAE MIN JEONG</a></div>
+        <div id="index"><div id="homei"><a href="index.html"> Home</a></div><div id="basketballi"><a href="basketball.html">Basketball</a></div><div id="perfumei"><a href="perfume.html">Perfume</a></div><div id="animationi"><a href="animation.html">Animation</a></div></div>        <div id="unv">Kwangwoonuvs</div>
+    </div>
+    <div id="center"><h1>BASKETBALL</h1></div>
+    </div>
+    <img src="image/basketball2.jpg" width="100%" height="100%" alt="">
+    
+    <div id="basketball_body">
+        <div id="intro"> 
+            <div id="intro1">Baskt Ball</div>
+            <div id="intro_content">
+                1891년 제임스 네이스미스에 의해 고안되었으며 공을 손으로 다루어 공중에 매달린 바스켓에 넣은 점수로 승부를 가르는 구기종목의 일종이다.
+                다양한 운동중에서 내가 가장 사랑하는 운동이며, 가장 큰 취미이다.농구를 한다고 하면, 대부분 그런데 왜 키가 작나는 반응을 보이기 십상이다. 하지만
+                 농구는 원래 커다란 신장으로 하는것이 아니라, 뜨거운 심장으로 하는것이다. 농구는 정말 높이가 중요한 스포츠임을 부인할 생각은 없지만, 높이가 전부인 스포츠는 아니다. 
+                 더 빠르고, 더 정확한 플레이로 신장의 차이를 극복하는 것은 농구의 묘미중 하나이다! 수많은 수비수를 재치고 골을 넣는 순간은 언제나 다시 한번 농구에 빠져들게 하는 순간이다.
+            </div>
+            <img src="image/curry.jpg" alt="" height="75%" width="20%" id="curry_image">
+        </div>
+    
+        <div id="stephen">
+            <div id="curry">STEPHEN CURRY</div>
+            <div id="curry1">가장 좋아하는 농구팀은 골든스테이츠 워리어스이다. 그중에서도 스테판 커리라는 선수를 좋아하는데, 아마 농구에 관심이 없는 사람들은 무한도전을통해 만나보았을 것이다. 커리는 3점슛 으로 리그 최고의 선수의 반열에 올랐다. 커리 이전의 농구에서는 3점슛은 주된 공격 옵션이 아니었다. 하지만 커리가 3점으로 리그를 호도하기 시작하였고, 현대 농구에 있어서 3점은 필수 불가결한 공격 옵션이 되었다. 
+                물론 그의 플레이스타일을 좋아하기도 하지만, 농구의 새로운 패러다임을 불러왔다는 점에서 그는 나에게 최고의 선수이다.</div>
+        </div>
+
+        <figure style="position: relative; left: 10%; padding-bottom: 20%;">
+            <figcaption>정태민 골장면</figcaption>
+            <img src="https://j.gifs.com/r8Q7X4.gif" alt="농구">
+        </figure>
+
+        
+
+    </div>
+
+
+    
+</body>
+</html>

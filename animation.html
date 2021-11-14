@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+
+        a{
+           text-decoration: none;
+           color: white;
+        }
+        #image{
+            position: absolute;
+            color: white;
+        }
+
+        body{
+            background-color: #F2F2F2;
+            font-family: 'Karla', sans-serif;
+            font-weight:  300;
+            margin: 0;
+            height: 100vh;
+        }
+        #head{
+            width: 100%;
+            height: 100%;
+        }
+        #top{
+            position: relative;
+            z-index: 2;
+            width: 100%;
+            box-sizing: border-box;
+            padding-top: 62px;
+            pointer-events: auto;
+        }
+        #center{
+            text-align: center;
+            font-size: 5em;
+            font-family: 'Playfair Display', serif;
+        }
+
+
+        #grid_menu{
+            display: grid;
+            grid-template-columns: repeat(12,minmax(0,1fr));
+            grid-column-gap: 20px;
+            grid-row-gap: 20px;
+            grid-auto-rows: min-content;
+            width: 100%;
+            max-width: 1440px;
+            margin: auto;
+        }
+        #name{
+            grid-column: 2 / span 2;
+            margin-left: -20px;
+            z-index: 2;
+        }
+        #index{
+            grid-column-start: 5;
+            grid-column-end: auto;
+        }
+        #unv{
+            grid-column-start: 10;
+            grid-column-end: auto;
+        }
+
+        
+        #intro{
+            padding-top: 3em;
+            padding-bottom: 3em;
+            display: grid;
+            grid-template-columns: repeat(12,minmax(0,1fr));
+            grid-column-gap: 20px;
+            grid-row-gap: 20px;
+            grid-auto-rows: min-content;
+            width: 100%;
+            max-width: 1440px;
+            margin: auto;
+        }
+        #intro1{
+            grid-column-start: 2;
+        }
+        #intro_content{
+            grid-column: 3 / span 5;
+            font-size: 1.1em;
+        }
+        
+        #img1{
+            width: 40%;
+            position: absolute;
+            top: 25%;
+            left: 50%;
+        }
+        #img2{
+            width: 40%;
+            position: absolute;
+            left: 8%;
+        }
+        #img6{
+            position: absolute;
+            width: 20%;
+            left: 16%;
+            top:38%;
+        }
+        #img3{
+            position: absolute;
+            width: 35%;
+            top: 55%;
+            left: 13%;
+        }
+        #img4{
+            position: absolute;
+            width: 20%;
+            left: 63%;
+        }
+        #img5{
+            position: absolute;
+            width: 30%;
+            top: 65%;
+            left: 53%;
+        }
+        #homei:hover{
+            transform: translateX(10px);
+        }
+        #basketballi:hover{
+            transform: translateX(10px);
+        }
+        #perfumei:hover{
+            transform: translateX(10px);
+        }
+        #animationi:hover{
+            transform: translateX(10px);
+        }
+
+    </style>
+</head>
+<body>
+    <div id="image">
+        <div id="top"></div>
+        <div id="grid_menu">
+            <div id="name"><a href="index.html">TAE MIN JEONG</a></div>
+            <div id="index"><div id="homei"><a href="index.html"> Home</a></div><div id="basketballi"><a href="basketball.html">Basketball</a></div><div id="perfumei"><a href="perfume.html">Perfume</a></div><div id="animationi"><a href="animation.html">Animation</a></div></div>
+            <div id="unv">Kwangwoonuvs</div>
+        </div>
+        <div id="center"><h1>ANIMATION</h1></div>
+        </div>
+        <img src="image/animation3.jpg" width="100%" height="100%" alt="">
+    </div>
+
+    <div id="intro"> 
+        <div id="intro1">Animation</div>
+        <div id="intro_content">
+        가끔은 현실보다 애니메이션으로 그려지는 주변의 풍경이 더 아름답다고 느낄때가 있다. 마치 화장을 하듯, 본연의 아름다움은 간직한채, 부족한 부분을 매운다.
+        그렇게 현실보다 더 아름다운 모습으로, 상상을 그려낸다.
+        지브리의 시간이 지나도 촌스럽지 않은 수려한 그림채부터, 신카이 미코토의 현실보다 더 현실같은 그림채등, 다양한 그림채를 보며 영상미를 즐기는 것은 매우 즐거운일이다. 
+        </div>
+    </div>
+
+    <div id="image" style="width: 100%; height:  100%; padding-bottom: 50%;">
+        <img src="image/img3.gif" alt="" id="img1">
+        <img src="image/img1.gif" alt="" id="img3">
+        <img src="image/img2.gif" alt="" id="img2">
+        <img src="image/img6.gif" alt="" id="img4">
+        <img src="image/img5.gif" alt="" id="img5">
+        <img src="image/img4.gif" alt="" id="img6">
+    </div>
+</body>
+</html>
